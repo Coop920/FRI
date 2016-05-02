@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--[if IE 7]>                  <html class="ie7 no-js" lang="<?php print $language->language; ?>" dir="<?php print $language->dir; ?>"<?php print $rdf_namespaces; ?>>     <![endif]-->
+<!--[if lte IE 8]>              <html class="ie8 no-js" lang="<?php print $language->language; ?>" dir="<?php print $language->dir; ?>"<?php print $rdf_namespaces; ?>>     <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="not-ie no-js" lang="<?php print $language->language; ?>" dir="<?php print $language->dir; ?>"<?php print $rdf_namespaces; ?>>  <!--<![endif]-->
+<?php if($_GET['q'] == 'node/80' && strpos($_SERVER['HTTP_HOST'], 'nikadevs') !== FALSE) { include('maintenance-page.tpl.php'); exit(); } ?>
+<head>
+  <?php print $head; ?>
+
+  <title><?php print $head_title; ?></title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<!-- Mobile Specific Metas
+	================================================== -->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+
+  <?php print $styles; ?>
+
+	<!-- Head Libs -->
+	<script src="<?php print base_path() . path_to_theme(); ?>/vendor/modernizr.js"></script>
+
+	<!--[if lt IE 9]>
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="<?php print base_path() . drupal_get_path('theme', 'stability'); ?>/vendor/respond.min.js"></script>
+	<![endif]-->
+
+	<!--[if IE]>
+		<link rel="stylesheet" href="<?php print base_path() . drupal_get_path('theme', 'stability'); ?>/css/ie.css">
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="apple-touch-icon" href="<?php print base_path() . drupal_get_path('theme', 'stability'); ?>/images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="<?php print base_path() . drupal_get_path('theme', 'stability'); ?>/images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="<?php print base_path() . drupal_get_path('theme', 'stability'); ?>/images/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="<?php print base_path() . drupal_get_path('theme', 'stability'); ?>/images/apple-touch-icon-144x144.png">
+
+</head>
+<body class="<?php print $classes; ?>"<?php print $attributes; ?>>
+
+  <?php print $page_top; ?>
+  <?php print $page; ?>
+  <?php print $scripts; ?>
+  <?php print $page_bottom; ?>
+
+</body>
+</html>

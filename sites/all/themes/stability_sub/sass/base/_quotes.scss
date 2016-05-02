@@ -1,0 +1,17 @@
+///
+/// @file STARTERKIT/scss/base/_quotes.scss
+/// \file STARTERKIT/scss/base/_quotes.scss
+/// \ingroup STARTERKIT_SCSS_Base
+/// \brief Theming for quotes and blockquotes.
+///
+
+blockquote,
+%blockquote {
+  font-style: italic;
+}
+
+quote,
+%quote {
+  font-style: italic;
+}
+

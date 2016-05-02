@@ -1,0 +1,26 @@
+///
+/// @file STARTERKIT/scss/base/_links.scss
+/// \file STARTERKIT/scss/base/_links.scss
+/// \ingroup STARTERKIT_SCSS_Base
+/// \brief Base styles for links.
+///
+
+// Drupal's skip to main content link
+// ----------------------------------
+#skip {
+  position: absolute;
+  left: -9999px;
+}
+
+a {
+  transition: all .3s ease;
+  #{$link} {
+    color: $link-color;
+    text-decoration: none;
+  }
+  #{$focus} {
+    color: $link-alt-color;
+    text-decoration: underline;
+    outline: none !important;
+  }
+}

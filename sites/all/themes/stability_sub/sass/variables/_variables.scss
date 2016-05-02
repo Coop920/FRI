@@ -1,0 +1,117 @@
+///
+/// @file STARTERKIT/scss/global/_variables.scss
+/// \file STARTERKIT/scss/global/_variables.scss
+/// \ingroup STARTERKIT_SCSS_Global
+/// \brief Variables
+///
+
+// Singularity global config.
+
+@include sgs-change('debug', true);
+
+$break1: 620px;
+$break2: 960px;
+
+@include add-grid(4);
+@include add-grid(8 at $break1);
+@include add-grid(12 at $break2);
+
+// Box Model
+$box-model: 'border-box';
+
+// Typographic
+$base-font-size     : 16px;
+$base-line-height   : 24px;
+
+// Assign sizes in px
+$xxxsmallpx    : 7px;
+$xxsmallpx     : 8px;
+$xsmallpx      : 9px;
+$smallpx       : 10px;
+$normpx        : $base-font-size;
+$medpx         : 13px;
+$largepx       : 18px;
+$xlargepx      : 20px;
+$xxlargepx     : 21px;
+$xxxlargepx    : 24px;
+$xxxxlargepx   : 35px;
+$xxxxxlargepx  : 42px;
+
+$type-indent  : $xxlargepx;
+
+$rhythm-unit                : rem;
+$rem-with-px-fallback       : true;
+
+$show-baseline-grid-backgrounds   : false;
+$round-to-nearest-half-line       : true;
+$grid-background-baseline-height  : $base-line-height;
+$grid-background-baseline-color   : #efefef;
+
+$sans-stack      : Arial, Helvetica, sans-serif;
+$serif-stack     : Georgia, 'Times New Roman', Times, serif;
+$mono-stack      : monospace, serif;
+$hammersmith	 : 'hammersmith_oneregular', Arial, Helvetica, sans-serif;
+$proxima-lt	 	 : 'proxima_nova_cn_ltlight', Arial, Helvetica, sans-serif;
+$proxima-ltit	 : 'proxima_nova_condensedLtIt', Arial, Helvetica, sans-serif;
+$proxima	 	 : 'proxima_nova_cn_rgregular', Arial, Helvetica, sans-serif;
+$proxima-it	 	 : 'proxima_nova_condensedRgIt', Arial, Helvetica, sans-serif;
+$proxima-sb	 	 : 'proxima_nova_cn_ltsemibold', Arial, Helvetica, sans-serif;
+$proxima-sbit	 : 'proxima_nova_condensedSBdIt', Arial, Helvetica, sans-serif;
+
+$small-padding	 : 10px;
+
+// Layout variables
+// ----------------
+// Variables directly related to partials in the ../layout/ directory.
+
+// Colors with styleguide comments
+$grey1     : #3f3f3f; // grey one
+$grey2     : #646464; // grey two
+$grey3     : #959595; // grey three
+
+$green1     : #4c8b2b; // green one
+$green2     : #8bb64a; // green two
+$green3		: #bbc832; // green three
+$green4		: #fbf6f2; // green four
+
+$blue 		: #00828b; // blue accent
+
+
+// Default Colors
+$body-text-color   : #3f3f3f;
+$link-color        : $green1;
+$link-alt-color    : $green2;
+$headers-text-color: #4c8b2b;
+
+// Other colors
+
+
+// Links
+// Ex:
+// a {
+//   #{$link} {
+//     text-decoration: none;
+//   }
+//  }
+$link   : '&:link, &:visited';
+$focus  : '&:focus, &:hover, &:active, &.active';
+
+// Define sprites used across the site
+// -----------------------------------
+// Uncomment below if using sprites.
+//$icons: sprite-map("./global/*.png");
+
+// General support settings
+// ----------------
+$legacy-support-for-ie6: false;
+$legacy-support-for-ie7: false;
+$legacy-support-for-ie8: false;
+
+// Vendor Prefixes
+// ---------------
+$experimental-support-for-mozilla : true;
+$experimental-support-for-webkit : true;
+$support-for-original-webkit-gradients : true;
+$experimental-support-for-opera : true;
+$experimental-support-for-microsoft : true;
+$experimental-support-for-khtml : true;

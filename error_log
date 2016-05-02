@@ -1,0 +1,1 @@
+[17-Jul-2015 10:54:03 America/New_York] PHP Fatal error:  Call to undefined function taxonomy_get_term() in /home2/tbgcdnc/public_html/fri/modules/php/php.module(80) : eval()'d code on line 4

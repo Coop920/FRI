@@ -1,0 +1,8 @@
+name = Fees
+description = "Ubercart fees"
+core = 7.x
+dependencies[] = uc_store
+dependencies[] = uc_payment
+dependencies[] = uc_product
+dependencies[] = rules
+package = Ubercart - extra

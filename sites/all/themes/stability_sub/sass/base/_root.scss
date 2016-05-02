@@ -1,0 +1,27 @@
+///
+/// @file STARTERKIT/scss/base/_root.scss
+/// \file STARTERKIT/scss/base/_root.scss
+/// \ingroup STARTERKIT_SCSS_Base
+/// \brief Base theming for the `<body>` tag.
+///
+
+// Body
+// ----
+// Applies the most basic settings for the body element.
+@include establish-baseline;
+
+* {
+  @include box-sizing($box-model);
+}
+
+body {
+  	color: $body-text-color;
+  	font-family: $proxima-lt;
+  	@include baseline-grid-background;
+  	line-height: normal;
+	min-width: 320px;
+}
+img {
+  	max-width: 100%;
+  	height: auto;
+}
