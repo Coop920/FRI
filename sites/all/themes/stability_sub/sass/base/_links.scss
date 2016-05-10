@@ -14,13 +14,4 @@
 
 a {
   transition: all .3s ease;
-  #{$link} {
-    color: $link-color;
-    text-decoration: none;
-  }
-  #{$focus} {
-    color: $link-alt-color;
-    text-decoration: underline;
-    outline: none !important;
-  }
 }

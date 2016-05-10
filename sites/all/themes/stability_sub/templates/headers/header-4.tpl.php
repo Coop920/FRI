@@ -4,7 +4,7 @@
     <div class="container">
 
       <div class="header-top-left">
-        <span class="info-item"><i class="fa fa-truck"></i><?php print theme_get_setting('phones'); ?> | <a href="./node/441">Careers</a></span>
+        <span class="info-item"><i class="fa fa-truck"></i><?php print theme_get_setting('phones'); ?> | <a href="./career-opportunities">Careers</a></span>
       </div>
       <div class="header-top-right">
         <?php print $login_account_links; ?>

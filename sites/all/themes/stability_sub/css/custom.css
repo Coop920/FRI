@@ -47,6 +47,9 @@ ul.links li {
     list-style: none;   
 }
 
+/* Base */
+
+
 
 /*********************************************** Top and Nav */
 
@@ -154,7 +157,8 @@ a#rent-event {
     _height: 60px;
 }
 #block-menu-menu-housewares-specials-additio ul.menu li a {
-    width: 300px;
+    width: 355px;
+    padding-right: 45px;
     height: 60px;
     display: block;
     font-size: 18pt;
@@ -403,7 +407,7 @@ h2 + .featured-section {
 }
 @media (min-width: 992px) {
   .featured-item:hover {
-    background: none;
+    background: none !important;
 
       
   }
@@ -454,6 +458,7 @@ h2 + .featured-section {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff7f8c8d', endColorstr='#ff727f80', GradientType=0);
   border-color: #727f80;
     color: #fff;
+    margin-right: 20px;
 }
 .btn-default:hover,
 .btn-default:focus {
@@ -511,10 +516,10 @@ form-managed-file .btn {
 
 /************************************************** Footer */
 
-#block-views-location-map-block-3 .view-footer h5 {
+#block-views-location-map-block-3 .view-header h5 {
    text-align: center !important;
     color: #ddd !important;
-    margin: 10px auto;
+    margin: 0 auto 10px;
     font-size: 16px !important;
 }
 
@@ -549,9 +554,6 @@ form-managed-file .btn {
 
 /************************************************** LOCATIONS */
 
-#Location-Content {
-    padding: 50px 0px 150px;
-}
 
 .getdirections-map {
     display: none;   
@@ -600,7 +602,7 @@ body.node-type-location .webform-client-form {
 #block-views-homepage-rotators-block-1 {
     text-align: center;
     margin: -15px auto 0px;
-    max-height: 500px !important;
+   /* max-height: 500px !important;*/
     overflow: hidden;
 }
 
@@ -907,7 +909,7 @@ body.page-careers-portal #Front-Content {
 /************************************************** Products */
 
 body.node-type-product .site-content {
-    padding-top: 0px !important;   
+      
 }
 
 #block-fieldblock-node-product-default-field-product-mastheads {
@@ -915,22 +917,14 @@ body.node-type-product .site-content {
 }
 
 body.uc-product-node .thumbnail {
-  padding: 6px;
-  background-color: #fff;
-  border: 1px solid #cecece;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
+
 }
 
 body.uc-product-node .thumbnail img {
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;       
+    
 }
 
-.view-products .products-row {
-    text-align: center !important;   
+.view-products .products-row {  
 }
 
 .view-products .category-description h2 {

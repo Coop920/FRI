@@ -16,6 +16,8 @@ regions[footer]             = Footer
 stylesheets[all][] = css/custom.css
 stylesheets[all][] = css/style.css
 
+scripts[] = js/scripts.js
+
 features[] = name
 features[] = logo
 features[] = slogan

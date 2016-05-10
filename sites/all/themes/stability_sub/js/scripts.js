@@ -1,49 +1,16 @@
 (function($){
 
-	Drupal.behaviors.mobileMenu = {
+	Drupal.behaviors.miscActions = {
 	  attach: function(context, settings) {
 
-		// Mobile Menu
-		$('#mobile-trigger').click(function(e) {
-			$('#mobile-trigger').toggleClass('active');
-			e.stopPropagation();
-	    	$('#block-awi-main-menu').slideToggle(300, 'swing', function() {
-	        //callback function after animation finished
-			});
+		$(document).ready(function(){
 
-		    $('#block-awi-main-menu .menu-block-1 li.expanded').removeClass('active');
-			$('#block-awi-main-menu .menu-block-1 li.expanded .menu').css('display', 'none');
-		});
-/*
-		$('#block-awi-main-menu').bind('clickoutside', function (event) {
-			$(this).slideUp(300, 'swing');
-			$('#mobile-trigger').removeClass('active');
-		});
-*/
-		// Sub Menu Items
-		$('#block-awi-main-menu .menu-block-1 li.expanded').click(function () {
-			$(this).toggleClass('active');
-			$(this).children('.menu').slideToggle(300, 'swing');
+
 		});
 
 	  }
 	};
 
-
-	Drupal.behaviors.homepageSlider = {
-	    attach: function(context, settings) {
-		    $(window).load(function(){
-		      	$('#block-views-block-slideshow-block-1 .view-slideshow').flexslider({
-		        	animation: "slide",
-		        	selector: ".view-content > .views-row",
-		        	directionNav: false,
-		        	start: function(slider){
-		          	$('body').removeClass('loading');
-		        	}
-		      	});
-		    });
-	    }
-	};
 
 	Drupal.behaviors.equalHeights = {
 	  attach: function(context, settings) {

@@ -9,12 +9,15 @@
 
 @include sgs-change('debug', true);
 
-$break1: 620px;
-$break2: 960px;
+$sm: 768px;
+$md: 992px;
+$lg: 1200px;
 
-@include add-grid(4);
-@include add-grid(8 at $break1);
-@include add-grid(12 at $break2);
+$break1: 1400px;
+$break2: 1600px;
+$break3: 1800px;
+$break4: 2000px;
+
 
 // Box Model
 $box-model: 'border-box';
@@ -50,38 +53,17 @@ $grid-background-baseline-color   : #efefef;
 $sans-stack      : Arial, Helvetica, sans-serif;
 $serif-stack     : Georgia, 'Times New Roman', Times, serif;
 $mono-stack      : monospace, serif;
-$hammersmith	 : 'hammersmith_oneregular', Arial, Helvetica, sans-serif;
-$proxima-lt	 	 : 'proxima_nova_cn_ltlight', Arial, Helvetica, sans-serif;
-$proxima-ltit	 : 'proxima_nova_condensedLtIt', Arial, Helvetica, sans-serif;
-$proxima	 	 : 'proxima_nova_cn_rgregular', Arial, Helvetica, sans-serif;
-$proxima-it	 	 : 'proxima_nova_condensedRgIt', Arial, Helvetica, sans-serif;
-$proxima-sb	 	 : 'proxima_nova_cn_ltsemibold', Arial, Helvetica, sans-serif;
-$proxima-sbit	 : 'proxima_nova_condensedSBdIt', Arial, Helvetica, sans-serif;
 
-$small-padding	 : 10px;
 
 // Layout variables
 // ----------------
 // Variables directly related to partials in the ../layout/ directory.
 
 // Colors with styleguide comments
-$grey1     : #3f3f3f; // grey one
-$grey2     : #646464; // grey two
-$grey3     : #959595; // grey three
 
-$green1     : #4c8b2b; // green one
-$green2     : #8bb64a; // green two
-$green3		: #bbc832; // green three
-$green4		: #fbf6f2; // green four
-
-$blue 		: #00828b; // blue accent
 
 
 // Default Colors
-$body-text-color   : #3f3f3f;
-$link-color        : $green1;
-$link-alt-color    : $green2;
-$headers-text-color: #4c8b2b;
 
 // Other colors
 

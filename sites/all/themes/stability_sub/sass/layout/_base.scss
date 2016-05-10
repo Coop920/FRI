@@ -1,3 +1,29 @@
-.layout-container {
+.container {
+	@include breakpoint($break1) {
+		width: 1370px;
+	}
+	@include breakpoint($break2) {
+		width: 1570px;
+	}
+	@include breakpoint($break3) {
+		width: 1770px;
+	}
+	@include breakpoint($break4) {
+		width: 1970px;
+	}
+}
 
+
+
+/* Regions */
+.content-suffix {
+	&.office-rentals {
+
+	}
+}
+
+#content {
+	> .container {
+		width: auto;
+	}
 }

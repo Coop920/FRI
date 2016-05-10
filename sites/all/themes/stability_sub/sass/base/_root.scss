@@ -15,10 +15,6 @@
 }
 
 body {
-  	color: $body-text-color;
-  	font-family: $proxima-lt;
-  	@include baseline-grid-background;
-  	line-height: normal;
 	min-width: 320px;
 }
 img {
