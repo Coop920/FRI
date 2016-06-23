@@ -1,0 +1,4 @@
+name = FRI Common Functionality
+description = Custom common functionality including libraries. Also contains one-off functionality that has not warranted it's own module.
+package = FRI
+core = 7.x

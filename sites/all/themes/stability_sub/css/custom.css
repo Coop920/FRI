@@ -30,7 +30,8 @@ hr.lg {
 
 .title-accent > h3 > span {
   font-family: 'Economica', sans-serif;
-  font-size: inherit !important;
+  font-family: "Oswald",sans-serif;
+  /*ont-size: inherit !important;*/
 }
 
 ul.juicer-feed li.juicer {
@@ -134,20 +135,29 @@ a#rent-event {
     -moz-box-shadow: 2px 2px 0px 1px rgba(0,0,0,0.75);
     box-shadow: 2px 2px 0px 1px rgba(0,0,0,0.75);
 }
-
+#menu-menu-housewares-specials-additio {
+    padding: 0;     
+}
 #block-menu-menu-housewares-specials-additio {
     text-align: center;
-    margin: 80px auto 10px !important;    
+    margin: 20px auto 10px !important; 
 }
+#block-menu-menu-housewares-specials-additio:before,
+#block-menu-menu-housewares-specials-additio:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+#block-menu-menu-housewares-specials-additio:after {
+    clear: both;
+}
+
 #block-menu-menu-housewares-specials-additio ul.menu {
     margin: 0px auto;
     padding: 0px;
 }
 #block-menu-menu-housewares-specials-additio ul.menu li {
     list-style: none;
-    margin: 5px 10px;
-    padding: 0px;
-    width: 350px;
     min-height: 60px;
     display: -moz-inline-stack;
     display: inline-block;
@@ -157,18 +167,19 @@ a#rent-event {
     _height: 60px;
 }
 #block-menu-menu-housewares-specials-additio ul.menu li a {
-    width: 355px;
-    padding-right: 45px;
     height: 60px;
     display: block;
-    font-size: 18pt;
-    margin-right: 50px;
+    font-size: 17pt;
     background-image: url(img/cta-arrow.png);
     background-position: top right;
     background-repeat: no-repeat;
     font-family: 'Economica', sans-serif;
     font-weight: bold;
     color: #000;
+     max-width: 280px;
+     background-color: rgba(0,0,0,.6);
+     position: relative;
+     left: 15px;
 }
 #block-menu-menu-housewares-specials-additio ul.menu li a:hover {
     text-decoration: none;  
@@ -601,7 +612,7 @@ body.node-type-location .webform-client-form {
 /*************************************** MASTHEADs */
 #block-views-homepage-rotators-block-1 {
     text-align: center;
-    margin: -15px auto 0px;
+    margin: auto 0px;
    /* max-height: 500px !important;*/
     overflow: hidden;
 }

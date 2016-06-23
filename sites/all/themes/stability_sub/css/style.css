@@ -538,17 +538,30 @@ img {
   padding-bottom: 60px;
 }
 
+.page-faq .view-frequently-asked-questions {
+  margin: 64px 0;
+}
+
 .view-location-map .geofieldMap {
   margin: 0;
 }
 
-.view-get-directions-button .rteright {
-  text-align: center;
-}
-
-.view-get-directions-button .rteright a {
+#block-67 a,
+#block-68 a,
+#block-69 a,
+#block-70 a {
   background-color: #da7156;
   background-image: none;
+}
+
+#block-67 a:hover, #block-67 a:focus,
+#block-68 a:hover,
+#block-68 a:focus,
+#block-69 a:hover,
+#block-69 a:focus,
+#block-70 a:hover,
+#block-70 a:focus {
+  background: #727f80 !important;
 }
 
 #block-views-location-map-block-1 .row {
@@ -590,14 +603,17 @@ img {
 }
 
 #block-views-location-map-block-3 .view-footer {
-  background: url("../images/showroommap_square.gif") no-repeat center 37%;
   max-height: 300px;
-  min-height: 245px;
   overflow: hidden;
+  text-align: center;
+}
+
+#block-views-location-map-block-3 .view-footer p {
+  margin: -35px 0 0;
 }
 
 #block-views-location-map-block-3 .view-footer img {
-  display: none;
+  zoom: 77%;
 }
 
 #block-views-homepage-rotators-block-1 {
@@ -606,6 +622,12 @@ img {
 
 #block-views-homepage-rotators-block-1 .carousel-inner .field-content img {
   width: 100%;
+}
+
+.front .nd-region.cta {
+  background: url("../images/cta.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .radio input[type="radio"],
@@ -620,10 +642,22 @@ img {
   width: 100%;
 }
 
-.content .title-accent,
-.site-content .title-accent,
-.content-suffix .title-accent {
-  
+.content #sidebar .title-accent h3,
+.site-content #sidebar .title-accent h3,
+.content-suffix #sidebar .title-accent h3 {
+  font-size: 18px;
+}
+
+.content #sidebar .title-accent span,
+.site-content #sidebar .title-accent span,
+.content-suffix #sidebar .title-accent span {
+  font-size: inherit;
+}
+
+.content .title-accent h3,
+.site-content .title-accent h3,
+.content-suffix .title-accent h3 {
+  font-size: 30px;
 }
 
 .project-item .dlink .fa, .project-item .zoom .fa {
@@ -640,6 +674,14 @@ img {
   margin-top: 40px;
 }
 
+#block-views-homepage-rotators-block-2 .owl-wrapper .owl-item {
+  text-align: center;
+}
+
+table.cart-review th:last-child {
+  min-width: 100px;
+}
+
 .node-type-product .node-product .thumbnail {
   padding: 0;
   background: none;
@@ -648,4 +690,81 @@ img {
 
 .node-type-product .node-product .buttons_added {
   margin-bottom: 20px;
+}
+
+.node-type-product .node-product table {
+  width: 100% !important;
+}
+
+.node-type-product .node-product table p {
+  margin-bottom: 5px;
+}
+
+.node-type-product .node-product table p:empty {
+  margin-bottom: 0;
+  height: 0;
+}
+
+#uc-product-add-to-cart-form-272 .quantity,
+#uc-product-add-to-cart-form-274 .quantity,
+#uc-product-add-to-cart-form-275 .quantity,
+#uc-product-add-to-cart-form-276 .quantity,
+#uc-product-add-to-cart-form-277 .quantity {
+  display: none !important;
+}
+
+#block-views-monthly-specials-block-1 {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: solid 2px #ccc;
+}
+
+#block-views-monthly-specials-block-1 .title-accent {
+  display: none;
+}
+
+.view-monthly-specials article.node-special {
+  border-bottom: solid 2px #ccc;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.view-monthly-specials article.node-special header h2.title {
+  font-family: "Economica",sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.view-monthly-specials article.node-special .content {
+  margin-bottom: 30px;
+}
+
+.view-monthly-specials article.node-special .content p:last-child {
+  margin-bottom: 0;
+}
+
+.view-monthly-specials article.node-special footer .links {
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.view-monthly-specials article.node-special footer .node-readmore a {
+  display: inline-block;
+  background-image: linear-gradient(to bottom, #7f8c8d 0%, #727f80 100%);
+  background-repeat: repeat-x;
+  border-color: #727f80;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 6px;
+  box-shadow: 0 -3px 0 rgba(0, 0, 0, 0.06) inset;
+  font-family: "Oswald",sans-serif;
+  text-transform: uppercase;
+  transition: all .3s ease;
+}
+
+.view-monthly-specials article.node-special footer .node-readmore a:hover {
+  text-decoration: none;
+  color: #333;
 }

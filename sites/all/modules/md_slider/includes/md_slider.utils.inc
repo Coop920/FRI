@@ -291,7 +291,7 @@ function _md_slider_include_media_browser_js() {
   }
   $included = TRUE;
   module_load_include('inc', 'media', 'includes/media.browser');
-  $javascript = media_browser_js();
+  $javascript = media_browser();
   foreach ($javascript as $key => $definitions) {
     foreach ($definitions as $definition) {
       $function = 'drupal_add_' . $key;

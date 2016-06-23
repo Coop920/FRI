@@ -1,0 +1,75 @@
+.view-location-map {
+	.geofieldMap {
+		margin: 0;
+	}
+}
+#block-67,
+#block-68,
+#block-69,
+#block-70 {
+	a {
+		background-color: #da7156;
+		background-image: none;
+		&:hover,
+		&:focus {
+			background: #727f80 !important;
+		}
+	}
+}
+
+
+#block-views-location-map-block-1 {
+	.row {
+		margin-bottom: 30px;
+	}
+	.field-content {
+		> a {
+		    -moz-user-select: none;
+		    border: 1px solid transparent;
+		    border-radius: 6px;
+		    cursor: pointer;
+		    display: inline-block;
+		    font-size: 14px;
+		    font-weight: normal;
+		    line-height: 1.42857;
+		    margin-bottom: 0;
+		    padding: 12px 24px;
+		    text-align: center;
+		    vertical-align: middle;
+		    white-space: nowrap;
+		    background-image: linear-gradient(to bottom, #7f8c8d 0%, #727f80 100%);
+		    background-repeat: repeat-x;
+		    border-color: #727f80;
+		    color: #fff;
+		    text-transform: uppercase;
+		    margin-top: 15px;
+		    box-shadow: 0 -3px 0 rgba(0, 0, 0, 0.06) inset;
+    		font-family: "Oswald",sans-serif;
+		    &:hover,
+		    &:focus {
+		    	text-decoration: none;
+				border-color: #7f8c8d;
+				text-shadow: none !important;
+		    }			
+		}
+	}	
+}
+
+#block-views-location-map-block-3 {
+	#leaflet-map {
+		display: none;
+	}
+	.view-footer {
+		//background: url('../images/showroommap_square.gif') no-repeat center 37%;
+		max-height: 300px;
+		//min-height: 245px;
+		overflow: hidden;
+		text-align: center;
+		p {
+			margin: -35px 0 0;
+		}
+		img {
+    		zoom: 77%;
+		}
+	}
+}

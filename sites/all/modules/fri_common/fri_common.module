@@ -1,0 +1,27 @@
+<?php
+	
+/*
+print __FILE__; die;
+*/
+function fri_common_form_alter(&$form, &$form_state, $form_id) {
+
+  if ( in_array($form_id, array('uc_product_add_to_cart_form_274', 'uc_product_add_to_cart_form_275', 'uc_product_add_to_cart_form_276', 'uc_product_add_to_cart_form_277', 'uc_product_add_to_cart_form_272'))) {
+
+    // Room Selection
+    $form['attributes'][1]['#options'][1].= ' / Month';
+    $form['attributes'][1]['#options'][2].= ' / Month';
+    $form['attributes'][1]['#options'][3].= ' / Month';
+
+    // Leather Upgrade
+    $form['attributes'][4]['#options'][12].= ' Total / Month';
+    $form['attributes'][4]['#options'][13].= ' Total / Month';
+  }
+
+    //drupal_set_message($form_id); 
+    //echo '<pre>'.var_dump(array_keys($form)).'</pre>'; die; 
+    //echo '<pre>'.var_dump($form['attributes']).'</pre>'; die; 
+
+    // to do
+    // create foreach to loop through each option and add in '/ month'
+
+}

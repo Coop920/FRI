@@ -1,0 +1,77 @@
+.front {
+	.nd-region.cta {
+		background: url('../images/cta.jpg') no-repeat center center;
+		background-size: cover;
+		background-attachment: fixed;
+	}
+}
+
+
+
+.radio input[type="radio"], 
+.radio-inline input[type="radio"], 
+.checkbox input[type="checkbox"], 
+.checkbox-inline input[type="checkbox"] {
+	margin-left: 0;
+}
+.project-item .dlink, 
+.project-item .zoom {
+	width: 100%;
+}
+.content,
+.site-content,
+.content-suffix {
+	#sidebar {
+		.title-accent {
+			h3 {
+				font-size: 18px;
+			}
+			span {
+				font-size: inherit;
+			}
+		}
+	}
+}
+.content,
+.site-content,
+.content-suffix {
+	.title-accent {
+		h3 {
+			font-size: 30px;
+		}
+		span {
+
+		}
+	}
+}
+
+
+.project-item .dlink .fa, .project-item .zoom .fa {
+    margin: -40px 0 0 -65px;
+    width: 125px;
+    font-family: "Oswald",sans-serif;
+}
+
+.owl-theme .owl-pagination .owl-page.active span {
+	 background-color: #dc2a0b !important;
+}
+
+.block-webform {
+	margin-top: 40px;
+}
+
+#block-views-homepage-rotators-block-2 {
+	.owl-wrapper {
+		.owl-item {
+			text-align: center;
+		}
+	}
+}
+
+table.cart-review {
+	th {
+		&:last-child {
+			min-width: 100px;
+		}
+	}
+}

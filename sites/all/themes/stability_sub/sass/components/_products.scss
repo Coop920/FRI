@@ -1,0 +1,34 @@
+.node-type-product {
+	.node-product {
+		.thumbnail {
+			padding: 0;
+			background: none;
+			border: none;
+		}
+		.buttons_added {
+			margin-bottom: 20px;
+		}
+		table {
+			width: 100% !important;
+			p {
+				margin-bottom: 5px;
+				&:empty {
+					margin-bottom: 0;
+					height: 0;
+				}
+			}
+		}
+	}
+}
+
+
+// Packages pages overrides
+#uc-product-add-to-cart-form-272,
+#uc-product-add-to-cart-form-274,
+#uc-product-add-to-cart-form-275,
+#uc-product-add-to-cart-form-276,
+#uc-product-add-to-cart-form-277 {
+	.quantity {
+		display: none !important;
+	}
+}
